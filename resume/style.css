@@ -1,0 +1,215 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SORA', sans-serif;
+    
+}
+
+body {
+    /* margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    color: #183153;
+}
+
+h2
+{
+    font-size: 12px;
+}
+
+h3
+{
+    color: #183153;
+    font-weight:bold;
+}
+
+h4
+{
+    color: rgb(20, 110, 190, 1);
+}
+
+h5
+{
+    color: #0ca678;
+    font-size: 14px;
+}
+
+.resume {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 800px;
+    background: #fff;
+    margin: 50p;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rbga(0,0,0,0,1);
+}
+
+.resume aside
+{
+    position: relative;
+    background: #f0f1f3;
+    padding: 40px 40px 0 40px;
+    
+}
+
+.resume aside section
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    background: #f0f1f3;
+}
+
+.resume aside section:nth-child(1)
+{
+    border-bottom: 1px solid #183153;
+}
+
+.resume aside .img-box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:  50%;
+    overflow: hidden;
+}
+
+.resume aside .img-box img
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resume aside h1
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: 600;
+    Line-height: 1.4em;
+}
+
+.resume aside h2
+{
+    text-align: center;
+    color: rgb(20, 110, 190, 1);
+    font-size: 16px;
+}
+
+aside section
+{
+    padding-top: 40px;
+}
+
+aside section header
+{
+    color: #183153;
+    font-weight: 600;
+    Letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+aside section ul
+{
+    position: relative;
+}
+
+aside section ul li
+{
+    position: relative;
+    List-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+aside section ul li i
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 14px;
+    color: #ffd43b;
+}
+
+aside section ul li span
+{
+    color: #183153;
+}
+
+aside section li
+{
+    margin-bottom: 15px;
+}
+
+.resume main
+{
+    position: relative;
+    background: #fff;
+    padding: 40px 40px 0 40px;
+}
+
+main section
+{
+    margin-bottom: 30px;
+}
+
+main section h2
+{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+main section h6
+{
+    font-size: 14px;
+}
+
+
+main section article
+{
+    display: flex;
+    margin: 0 0 8px 0;
+}
+
+main section article header
+{
+    min-width: 188px;
+}
+
+main section article header
+{
+    font-size: 12px;
+}
+
+
+main section ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+main section ul li{
+    display: inline;
+    margin: 0 10px 0 0;
+    color: rgb(20, 110, 190, 1);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p
+{
+    margin: 4px 0 8px 0;
+}
