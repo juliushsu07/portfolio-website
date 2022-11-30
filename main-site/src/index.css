@@ -11,18 +11,22 @@
 }
 
 :root {
-    --color-bg: #fff;
-    --color-bg-variant: #868e96,;
-    --color-primary: #538dd7;
-    --color-primary-variant: rgb(20, 110, 190, 1);
+     /* #495057 */
+    --color-text: #183153;
     --color-white: #fff;
-    --color-text: #495057;
-    --color-light: #ffd43b ;
+    --color-blue: rgb(20, 110, 190, 1);
+    --color-blue-variant:  #538dd7;
+    --color-yellow:#ffd43b;
+    --color-yellow-variant: #fab005;
+    --color-green: #0ca678;
+    --color-white: #fff;    
+    --color-dark-gray: #495057;
+    --color-medium-gray: rgb(95, 105, 125);
+    --color-light-gray: #868e96;
 
     --transition: all 400ms ease;
-
     --container-width-lg : 75%;
-    --container-width-md : 86^;
+    --container-width-md : 86%;
     --container-width-ms : 90%
 }
 
@@ -36,7 +40,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+    background: var(--color-white);
     color: var(--color-text);
     line-height: 1.7;
     background-image: url(../src/assets/bg-texture.png);
@@ -66,40 +70,50 @@ section {
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-light-gray);
     margin-bottom: 3rem;
 }
 
 a{
-    color: var(--color-primary);
     transition: var(--transition);
 }
 
 a:hover{
-    color: var(--color-primary-variant);
+    background-color: var(--color-light-gray);
     transition: var(--transition);
 }
 
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-text);
+    border: 2px solid var(--color-text);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 2px solid var(--color-text);
     transition: var(--transition);
 }
 
 .btn:hover {
-    background: var(--color-light);
-    color: var(--color-bg);
-    border-color: transparent;
+    background: var(--color-light-gray);
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    width: max-content;
+    display: inline-block;
+    color: var(--color-text);
+    background: var(--color-yellow);
+    border: 2px solid var(--color-text);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--color-text);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: var(--color-yellow-variant);
 }
 
 img {
