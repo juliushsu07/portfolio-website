@@ -18,3 +18,13 @@ Header {
     justify-content: center;
 }
 
+/* ================== HEADER SOCIALS ================== */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
