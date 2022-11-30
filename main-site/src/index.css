@@ -76,6 +76,7 @@ section > h2, section > h5 {
 
 a{
     transition: var(--transition);
+    color: #183153;
 }
 
 a:hover{
