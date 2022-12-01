@@ -14,8 +14,9 @@
      /* #495057 */
     --color-text: #183153;
     --color-white: #fff;
-    --color-blue: rgb(20, 110, 190, 1);
-    --color-blue-variant:  #538dd7;
+    --color-blue-text: rgb(20, 110, 190, 1);
+    --color-blue-darker:  #538dd7;
+    --color-blue-light: #74c0fc;
     --color-yellow:#ffd43b;
     --color-yellow-variant: #fab005;
     --color-green: #0ca678;
@@ -66,6 +67,7 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5 {
@@ -80,20 +82,20 @@ a{
 }
 
 a:hover{
-    background-color: var(--color-light-gray);
+    background: var(--color-blue-darker);
     transition: var(--transition);
+    cursor: pointer;
 }
 
 .btn {
     width: max-content;
     display: inline-block;
     color: var(--color-text);
-    border: 2px solid var(--color-text);
+    transition: var(--transition);
     padding: 0.75rem 1.2rem;
+    border: 2px solid var(--color-text);
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 2px solid var(--color-text);
-    transition: var(--transition);
 }
 
 .btn:hover {

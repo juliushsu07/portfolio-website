@@ -1,0 +1,29 @@
+nav {
+    background: var(--color-blue-light);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;    
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    border: 2px solid var(--color-text);
+    cursor: pointer;
+}
+
+nav a {
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;  
+}
+
+nav a:hover {
+    background: var(--color-blue-darker);
+}
+
+nav a.active {
+    background: var(--color-blue-darker);
+}
