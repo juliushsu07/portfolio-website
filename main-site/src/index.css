@@ -19,11 +19,13 @@
     --color-blue-light: #74c0fc;
     --color-yellow:#ffd43b;
     --color-yellow-variant: #fab005;
-    --color-green: #0ca678;
+    --color-green: #63e6be;
+    --color-green-variant: #0ca678;
     --color-white: #fff;    
     --color-dark-gray: #495057;
     --color-medium-gray: rgb(95, 105, 125);
     --color-light-gray: #868e96;
+    --color-light: #f0f1f3;
 
     --transition: all 400ms ease;
     --container-width-lg : 75%;
@@ -44,7 +46,7 @@ body {
     background: var(--color-white);
     color: var(--color-text);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 /* ================== GENERAL STYLES ================== */

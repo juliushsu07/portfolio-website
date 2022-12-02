@@ -1,7 +1,66 @@
 #portfolio {
     padding-top: 7rem;
+    background: var(--color-light);
+    /* background-image: url(../../assets/bg-texture.png); */
 }
 
 Section > h2, Section > h5 {
     margin: 2.5rem 0 2.5rem 0;
 }
+
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.project__buttons {
+    background: var(--color-green);
+    padding: 1.3rem;
+    border-radius: 0 0 2rem 2rem;
+    border-bottom: 0.5rem solid var(--color-green);
+}
+
+.portfolio__item{
+    border-radius: 2rem ;
+}
+
+.portfolio__item img{
+    border-radius: 0;
+    padding: 2rem;
+    background: var(--color-white);
+    border-radius: 2rem 2rem 0 0 ;
+}
+
+.portfolio__item{
+    background: var(--color-white);
+    transition: var(--transition);
+}
+
+.portfolio__item:hover {
+    border: 2px solid var(--color-green-variant);
+    background: var(--color-green);
+    border-bottom: 0.5rem solid var(--color-green-variant);   
+    cursor: pointer;
+}
+
+
+/* ================== Media Queries (MEDIUM DEVICES) ================== */
+@media screen and (max-width:1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* ================== Media Queries (SMALL DEVICES) ================== */
+@media screen and (max-width:600px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        
+    }
+    .portfolio__item{
+        margin: 0 1rem 0 1rem;
+    }
+} 
