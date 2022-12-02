@@ -10,37 +10,41 @@ function About() {
     <section id="about">
       <h5>Get To Know</h5>  
       <h2>About Me</h2>
-      <div className='about__me'></div>
-        <div className='about__me-image'>
-          <img src={ME} alt='About Image' />
-        </div>
-    
-    <div className ="about__content">
-      <div className='about__cards'>   
-        
-      <article className='about__card'>
-          <TbNotebook /> 
-          <h5>Experience</h5>
-          <small>4+ Years Working</small>
-        </article>
-        
-        <article className='about__card'>
-          <FaProjectDiagram /> 
-          <h5>Projects</h5>
-          <small> 14 projects and 88,888 comits</small>
-        </article>
- 
-        <article className='about__card'>
-          <TbSchool /> 
-          <h5>UBC</h5>
-          <small>Bachelor of Computer Engineering</small>
-        </article>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque ipsam ipsa delectus deleniti provident magni sit. Aspernatur temporibus ipsam maiores iure. Itaque aperiam ea quo omnis, dicta quidem obcaecati.</p>
-        
-        <a href="#contact" className='btn btn-primary'>Let's talk</a>
+      <div className='container about__container'>
+      
+        <div className ="about__content">
+          <div className='about__cards'>   
+            
+            <article className='about__card'>
+              <TbNotebook /> 
+              <h5>Experience</h5>
+              <small>4+ Years <br></br> Working</small>
+            </article>
+            
+            <article className='about__card'>
+              <FaProjectDiagram /> 
+              <h5>Git</h5>
+              <small> 14 projects<br></br>88,888 comits</small>
+            </article>
+    
+            <article className='about__card'>
+              <TbSchool /> 
+              <h5>UBC</h5>
+              <small>Bachelor of <br></br>Comp Eng</small>
+            </article>
+          </div>
+
+
+          <p>I'm a positive, enthusiastic and competent Full Stack Developer, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!
+            <br></br>
+            <br></br>
+            During my last 4+ years working as a Software Engineer and a Senior Operation Specialist, I have gained a lot of experience in building web applications using ReactJS as the front-end and NodeJS and ExpressJS as the back-end with MongoDB. I enjoy taking on challenges, and I learn new kits and frameworks in my free time to stay updated with current technology. I strive to write better code that meets first-class standards and desire to make an impact in software development!
+          </p>
+
+        </div>
+      
       </div>
-    </div>
     </section >
   )
 }
