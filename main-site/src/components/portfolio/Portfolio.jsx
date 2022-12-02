@@ -59,8 +59,7 @@ function Portfolio() {
     <section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
-      <ul className='container portfolio__container'
-      >
+      <ul className='container portfolio__container'>
         {projects.map((project) => (
           <Project
             key={project.id}
