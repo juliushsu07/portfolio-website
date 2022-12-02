@@ -26,12 +26,13 @@
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    border: 2px solid transparent;
 }
 
 .contact__option:hover {
     background: var(--color-light-gray);
     cursor: pointer;
-    border-color: var(--color-light);
+    border: 2px solid var(--color-blue-light);
 }
 
 .contact__option-icon {
@@ -43,8 +44,13 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.9rem;
+    color: var(--color-blue-light);
 }
 
+.contact__option a:hover {
+    background: transparent;
+    color: var(--color-text);
+}
 
 /* ================== FORM ================== */
 form {
@@ -56,6 +62,7 @@ form {
 form button {
     margin-left: auto;
     margin-right: 0;
+    margin-top: 1rem;
 }
 
 input, textarea {
@@ -80,9 +87,10 @@ input::placeholder, textarea::placeholder {
         
     }
 
-    .contact__options {
+    .contact__options, form {
         margin: 1rem 1rem 0 1rem;
     }
+
 }
 
 /* ================== Media Queries (SMALL DEVICES) ================== */
