@@ -3,20 +3,34 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/me.png'
 import HeaderSocial from './HeaderSocial'
+import Typewritter from 'typewriter-effect'
 
 function Header() {
   return (
     <header>
       <div className='container header__container'>
-        <h5>Hello I'm</h5>
+          <Typewritter  onInit={(typewritter) => {
+              typewritter
+              .typeString(`<span style="color: var(--color-text)">console</span>`)
+              .typeString(`<span style="color: var(--color-yellow-variant)">.</span><span style="color: var(--color-yellow)">log</span><span style="color: var(--color-purple-variant)">&#40;</span><span style="color: var(--color-green)">&#34;Hello World!&#34;</span><span style="color: var(--color-purple-variant)">&#41;</span>`)
+              .typeString(`<br>`)
+              .typeString(`<`)
+              .typeString("FullstackDeveloper")
+              .typeString(" />")
+              .start();
+            }}
+          />
         <h1>Julius Hsu</h1>
-        <h5 className='text-light'>Fullstack Developer</h5>
+
         <CTA />
         <HeaderSocial />
-          <div className='me'>
+        
+        <div className='me'>
           <img src={ME} alt='me' />
         </div>
+        
         <a href='#contact' className='scroll__down'>Scroll Down</a>
+      
       </div>
     </header>
   )

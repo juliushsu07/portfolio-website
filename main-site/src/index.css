@@ -15,6 +15,7 @@
      /* #495057 */
     --color-text: #183153;
     --color-white: #fff;
+    --color-pink-white: #FFF1FA;
     --color-blue-text: rgb(20, 110, 190, 1);
     --color-blue-darker:  #538dd7;
     --color-blue-light: #74c0fc;
@@ -22,6 +23,8 @@
     --color-yellow-variant: #fab005;
     --color-green: #63e6be;
     --color-green-variant: #0ca678;
+    --color-purple: #b197fc;
+    --color-purple-variant: #6741d9;
     --color-white: #fff;    
     --color-dark-gray: #495057;
     --color-medium-gray: rgb(95, 105, 125);
@@ -83,7 +86,6 @@ a{
 }
 
 a:hover{
-    background: var(--color-blue-darker);
     transition: var(--transition);
     cursor: pointer;
 }
@@ -107,7 +109,7 @@ a:hover{
     width: max-content;
     display: inline-block;
     color: var(--color-text);
-    background: var(--color-yellow);
+    background: var(--color-white);
     border: 2px solid var(--color-text);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
