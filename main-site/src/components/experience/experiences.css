@@ -1,0 +1,17 @@
+#experience {
+    background: var(--color-light);
+    padding: 3rem 2rem 6rem 2rem;
+    height: 100%;
+}
+
+.vertical-timeline-element-title { 
+    color: var(--color-blue-text);
+}
+
+.vertical-timeline-element-date {
+    color: var(--color-green-variant);
+}
+
+.vertical-timeline-element-content {
+    transition: var(--transition);
+}

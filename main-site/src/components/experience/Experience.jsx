@@ -1,8 +1,7 @@
 import React from 'react'
 import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import {GrWorkshop} from 'react-icons/gr'
 
-function Experience({ date, jobTitle, location, achievements}) {
+function Experience({icon, date, jobTitle, location, achievements}) {
   
   const listItems = achievements.map((achievement, index) => 
     <li key={index}>
@@ -15,7 +14,7 @@ function Experience({ date, jobTitle, location, achievements}) {
         className="vertical-timeline-element--work"
         date={date}
         iconStyle={{ background: "var(--color-white)" }}
-        icon={<GrWorkshop />}
+        icon={icon}
         >
         <h3 className="vertical-timeline-element-title">{jobTitle}</h3>
         <h4 className="vertical-timeline-element-subtitle">{location}</h4>
