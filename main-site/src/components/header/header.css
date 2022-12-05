@@ -35,10 +35,6 @@ Header {
     color: var(--color-purple-variant);
 }
 
-.greeting {
-    
-}
-
 .Typewriter  {
     color: var(--color-blue-text);
     font-weight: 400;
@@ -83,11 +79,9 @@ Header {
 }
 
 .me {
-    width: 22rem;
-    height: 30rem;
+    width: 18rem;
     position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
+    left: calc(50% - 9rem);
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
@@ -107,6 +101,7 @@ Header {
     background: transparent;
 }
 
+
 /* ================== Media Queries (MEDIUM DEVICES) ================== */
 @media screen and (max-width:1024px) {
     header {
@@ -120,4 +115,6 @@ Header {
     .scroll__down {
         display: none;
     }
+    
 } 
+
