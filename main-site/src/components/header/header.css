@@ -45,7 +45,7 @@ Header {
 
 
 /* ================== CTA ================== */
-.cta {
+.header__cta {
     margin-top: 1rem;
     border-radius: 2rem;
     display: flex;

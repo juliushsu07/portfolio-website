@@ -1,9 +1,9 @@
 import React from 'react'
 import './header.css'
-import CTA from './CTA'
 import ME from '../../assets/me.png'
 import HeaderSocial from './HeaderSocial'
 import Typewritter from 'typewriter-effect'
+import RESUME from '../../assets/resume.pdf'
 
 function Header() {
   return (
@@ -22,7 +22,10 @@ function Header() {
           />
         <h1>Julius Hsu</h1>
 
-        <CTA />
+        <div className='header__cta'>
+          <a href={RESUME} target="_blank" className='btn-primary'>My Resume</a>
+        </div>
+
         <HeaderSocial />
         
         <div className='me'>
