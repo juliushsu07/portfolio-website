@@ -39,7 +39,7 @@ Header {
     color: var(--color-blue-text);
     font-weight: 400;
     white-space: pre;
-    height: 80px;
+    height: 5rem;
 }
 
 
@@ -87,16 +87,16 @@ Header {
 }
 
 /* ================== HEADER SOCIALS ================== */
-.scroll__down {
+.email__sidebar {
     position: absolute;
-    right: -2.3rem;
-    bottom: 4.7rem;
+    right: -4rem;
+    bottom: 6rem;
     transform: rotate(90deg);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
-.scroll__down:hover {
+.email__sidebar:hover {
     color: var(--color-blue-text);
     background: transparent;
 }
@@ -112,7 +112,7 @@ Header {
 /* ================== Media Queries (SMALL DEVICES) ================== */
 @media screen and (max-width:600px) {
     .header__socials,
-    .scroll__down {
+    .email__sidebar {
         display: none;
     }
     
