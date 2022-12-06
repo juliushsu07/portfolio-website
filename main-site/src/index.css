@@ -108,8 +108,6 @@ a:hover{
     width: max-content;
     display: inline-block;
     color: var(--color-text);
-    background: var(--color-white);
-    border: 2px solid var(--color-text);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;

@@ -32,27 +32,6 @@ function Portfolio() {
       "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
       "img" : IMG3
     },
-    {
-      "id": 4,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "img" : IMG4
-    },
-    {
-      "id": 5,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "img" : IMG5
-    },
-    {
-      "id": 6,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "img" : IMG6
-    },
   ]
 
   return (
