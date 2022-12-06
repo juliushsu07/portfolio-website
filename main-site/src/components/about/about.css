@@ -1,5 +1,5 @@
 #about {
-    padding-top: 5rem;
+    padding: 3rem 2rem 4rem 2rem;
     height: 100%;
 }
 
@@ -13,7 +13,8 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
 }
 
 .about__card {
@@ -26,8 +27,7 @@
 }
 
 .about__card:hover {
-    background: var(--color-light-gray);;
-    cursor: pointer;
+    background: var(--color-light-gray);
 }
 
 
@@ -44,9 +44,17 @@
     font-size: 0.8rem;
 }
 
+.my__stack {
+    display: grid;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: var(--color-blue-text);
+}
+
 .about__content p {
+    margin: 3rem 1rem 3rem 1rem;
     text-align: left;
-    margin: 3rem 8rem 3rem 8rem;
 }
 
 section > h2, section > h5 {
@@ -71,7 +79,11 @@ section > h2, section > h5 {
     }
 
     .about__content p {
-        margin: 1.5rem 0 1.5rem 0;
+        margin: 1.5rem;
+    }
+
+    .my__stack {
+        margin: 1rem 4rem 0;
     }
 }
 
@@ -90,10 +102,6 @@ section > h2, section > h5 {
 
     .about__card {
         padding: 0.5rem;
-    }
-
-    .about__content p {
-        margin: 1.5rem 1.5rem 0;
     }
 
     section > h2, section > h5 {

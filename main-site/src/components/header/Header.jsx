@@ -32,7 +32,7 @@ function Header() {
           <img src={ME} alt='me' />
         </div>
         
-        <a href="mailto:juliushsu07@gmail.com?" className='email__sidebar' target="_blank">juliushsu07@gmail.com</a>
+        <a href="mailto:juliushsu07@gmail.com" className='email__sidebar' target="_blank">juliushsu07@gmail.com</a>
       
       </div>
     </header>
