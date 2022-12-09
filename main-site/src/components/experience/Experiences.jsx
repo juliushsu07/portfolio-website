@@ -22,7 +22,7 @@ function Experiences() {
       "achievements" : [
         "Single-handily built a one-page Validation App using React, NodeJS and ExpressJS, which performed READ and UPDATE operations to MongoDB database. This app consisted of several validation tools and was used by ALL Operation team members to ensure everyday tasks were completed with a safety net.",
         "Oversaw the integration of the Validation App with the company's admin dashboard. The integration was done with Redux-observable middleware, bundling tools into one single checkpoint that performed validations on 10 components at once.",
-        "Created the company's training documentations from scratch; trained and onboarded 10+ Operation team members over the course of 4 years.",
+        "Trained and onboarded 10+ Operation team members over the course of 4+ years.",
         "Managed a team of 3 interns who worked on machine-learning image annotations."
       ]
     },
@@ -33,7 +33,7 @@ function Experiences() {
       "jobTitle" : "Junior Computer Engineer",
       "location" : "Cluep Inc.",
       "achievements" : [
-        "Created and maintained over 50 automation scripts for the Operation team.",
+        "Created and maintained over 50 automation python scripts for the Operation team.",
         "Designed and pitched bulk upload features for several front-end components of the admin dashboard. These features were later built and in turn increased operation efficiency by 95% for everyday tasks.",
         "Created, maintained and performed Manual Test Plans for up to 40 components of the company's admin dashboard.",
       ]

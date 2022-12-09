@@ -47,8 +47,7 @@
 .my__stack {
     display: grid;
     text-align: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 0 12.5rem 0;
     color: var(--color-blue-text);
 }
 
@@ -83,7 +82,7 @@ section > h2, section > h5 {
     }
 
     .my__stack {
-        margin: 1rem 4rem 0;
+        margin: 1rem 5rem 0;
     }
 }
 
