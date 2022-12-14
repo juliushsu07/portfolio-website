@@ -55,14 +55,14 @@ function About() {
             <p>I'm a positive, enthusiastic and competent Full Stack Developer, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!
               <br></br>
               <br></br>
-              During my last 4+ years working as a Software Engineer and a Senior Operation Specialist, I have gained a lot of experience in building web applications using ReactJS as the front-end and NodeJS and ExpressJS as the back-end with MongoDB. I enjoy taking on new challenges, and I learn new kits and frameworks in my free time to stay updated with current technology. I strive to write better code that meets first-class standards and desire to make an impact in software development!
+              During my last 4+ years working as a Software Engineer and a Senior Operation Specialist, I have gained a lot of experience in building web applications using ReactJS as the front-end and NodeJS and ExpressJS as the back-end with MongoDB. I enjoy taking on new challenges, and I learn new kits and frameworks in my free time to stay updated with current technology. I strive to write better code that meets first-class standards, and I desire to make an impact in the world of software development!
             </p>
 
           <div className='about__cards'>   
             <a href="https://github.com/juliushsu07" target="_blank" className='about__card'>
               <FaProjectDiagram /> 
               <h5>Git</h5>
-              <small> 15 projects</small>
+              <small> 17 projects</small>
             </a>
             
             <a href="#experience" className='about__card'>

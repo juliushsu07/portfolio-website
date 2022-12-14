@@ -30,7 +30,7 @@ function Experiences() {
       "className" : "work",
       "date" : "Feb 2018 - Mar 2020",
       "icon" : <GiBullseye />,
-      "jobTitle" : "Junior Computer Engineer",
+      "jobTitle" : "Junior Software Engineer",
       "location" : "Cluep Inc.",
       "achievements" : [
         "Created and maintained over 50 automation python scripts for the Operation team.",
