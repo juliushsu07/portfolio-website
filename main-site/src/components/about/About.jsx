@@ -1,9 +1,11 @@
 import React from 'react'
+import { InView } from 'react-intersection-observer';
+
 import './about.css'
+
 import {TbNotebook} from 'react-icons/tb'
 import {TbSchool} from 'react-icons/tb'
 import {FaProjectDiagram} from 'react-icons/fa'
-
 import {DiJavascript} from 'react-icons/di'
 import {FaPython} from 'react-icons/fa'
 import {FaReact} from 'react-icons/fa'
@@ -12,7 +14,7 @@ import {AiFillHtml5} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
 import {DiBootstrap} from 'react-icons/di'
 import {DiSass} from 'react-icons/di'
-// import {SiStyledcomponents} from 'react-icons/si'
+import {SiStyledcomponents} from 'react-icons/si'
 import {FaNodeJs} from 'react-icons/fa'
 import {SiExpress} from 'react-icons/si'
 import {SiFlask} from 'react-icons/si'
@@ -21,14 +23,11 @@ import {AiOutlineConsoleSql} from 'react-icons/ai'
 import {DiLinux} from 'react-icons/di'
 import {GrDocker} from 'react-icons/gr'
 
-
-
-function About() {
-  
+const About = ( {setActiveNav} ) => {
   return (
     <section id="about"> 
       <h2>About Me</h2>
-      
+      <InView as="div" onChange={(inView) => {inView ? setActiveNav('#about') : void(0) } }></InView>
       <div className='my__stack'>
         <small>
           <DiJavascript />Javascript&nbsp;&nbsp;
@@ -39,7 +38,7 @@ function About() {
           <DiCss3 />CSS3&nbsp;&nbsp;
           <DiBootstrap />Bootstrap&nbsp;&nbsp;
           <DiSass />Sass&nbsp;&nbsp;
-          {/* <SiStyledcomponents />Styled Components&nbsp;&nbsp; */}
+          <SiStyledcomponents />Styled Components&nbsp;&nbsp;
           <FaNodeJs />NodeJS&nbsp;&nbsp;
           <SiExpress />ExpressJS&nbsp;&nbsp;
           <SiFlask />Flask&nbsp;&nbsp;

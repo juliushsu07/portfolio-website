@@ -1,5 +1,7 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { InView } from 'react-intersection-observer';
+
 import 'react-vertical-timeline-component/style.min.css';
 import Experience from './Experience';
 import './experiences.css'
@@ -11,7 +13,7 @@ import {GiEgyptianWalk} from 'react-icons/gi'
 import {GiBullseye} from 'react-icons/gi'
 import {IoIosRocket} from 'react-icons/io'
 
-function Experiences() {
+const Experiences = ( {setActiveNav} ) => {
   const experiences = [
     {
       "className" : "work",
@@ -85,6 +87,7 @@ function Experiences() {
   return (
     <section id='experience'>
       <h2>My History</h2>
+      <InView as="div" onChange={(inView) => { inView ? setActiveNav('#experience') : void(0) } }></InView>
       <VerticalTimeline className='container experience__container'>
         {experiences.map( (experience,index) => (
           <Experience
@@ -103,7 +106,7 @@ function Experiences() {
         icon={<GiEgyptianWalk />}
       />
 
-    </VerticalTimeline>
+      </VerticalTimeline>
     </section>
   )
 }
