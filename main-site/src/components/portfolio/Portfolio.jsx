@@ -1,12 +1,15 @@
 import React from 'react'
-import './portfolio.css'
+import { InView } from 'react-intersection-observer';
+
 import Project from './Project'
+
+import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 
 
-function Portfolio() {
+function Portfolio( {setActiveNav} ) {
   const projects = [
     {
       "id": 1,
@@ -33,19 +36,19 @@ function Portfolio() {
 
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
-      <ul className='container portfolio__container'>
-        {projects.map((project) => (
-          <Project
-            key={project.id}
-            projectName={project.name}
-            demoLink={project.demoLink}
-            gitLink={project.gitLink}
-            img={project.img}
-          />
-        ))}
-      </ul>
+        <h2>My Recent Work</h2>
+        <InView as="div" onChange={(inView) => { inView ? setActiveNav('#portfolio') : void(0) } }></InView>
+        <ul className='container portfolio__container'>
+          {projects.map((project) => (
+            <Project
+              key={project.id}
+              projectName={project.name}
+              demoLink={project.demoLink}
+              gitLink={project.gitLink}
+              img={project.img}
+            />
+          ))}
+        </ul>
     </section>
   )
 }
