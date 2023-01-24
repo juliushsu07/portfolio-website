@@ -1,6 +1,6 @@
 Header {
     height: 100vh;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
     overflow: hidden;
 }
 
@@ -8,6 +8,21 @@ Header {
     text-align: center;
     height: 100%;
     position: relative;
+}
+
+.header__container > section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.header__container > section > h4 {
+    margin: 2rem 0 2rem;
 }
 
 .text-light {
@@ -45,8 +60,8 @@ Header {
 
 
 /* ================== CTA ================== */
-.header__cta {
-    margin-top: 1rem;
+.my__resume {
+    margin-top: 2rem;
     border-radius: 2rem;
     display: flex;
     gap: 1.2rem;
@@ -78,13 +93,13 @@ Header {
     background-color: var(--color-text);
 }
 
-.me {
+/* .me {
     width: 18rem;
     position: absolute;
     left: calc(50% - 9rem);
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
-}
+} */
 
 /* ================== HEADER SOCIALS ================== */
 .email__sidebar {
