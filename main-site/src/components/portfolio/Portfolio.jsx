@@ -20,7 +20,7 @@ function Portfolio( {setActiveNav} ) {
     },
     {
       "id": 2,
-      "name": "Aircall 48hr Challenge App",
+      "name": "Aircall 48hr Challenge",
       "demoLink": "https://aircall-5fd82.web.app/",
       "gitLink": "https://github.com/juliushsu07/aircall",
       "img" : IMG2
