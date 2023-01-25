@@ -1,10 +1,9 @@
 import React from 'react'
 
 function Project({projectName, demoLink, gitLink, img}) {
-  console.log(demoLink)
   return (
-    <li className='portfolio__item'>
-        <div className='portfolio__item-image'>
+    <li className='projects__item'>
+        <div className='projects__item-image'>
             <img src ={img} alt=''/>
         </div>
         

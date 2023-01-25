@@ -21,7 +21,7 @@ Header {
     width: 50%;
 }
 
-.header__container > section > h4 {
+.header__container > section > p {
     margin: 2rem 0 2rem;
 }
 

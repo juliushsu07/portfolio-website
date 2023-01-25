@@ -19,7 +19,6 @@ const Contact = ( {setActiveNav} ) => {
             alert('Email Sent!');
             e.target.reset()
         }, (error) => {
-            console.log(error.text);
             alert('There was some ERROR!')
         });        
     };

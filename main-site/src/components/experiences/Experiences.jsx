@@ -85,9 +85,9 @@ const Experiences = ( {setActiveNav} ) => {
   ]
 
   return (
-    <section id='experience'>
+    <section id='experiences'>
       <h2>My History</h2>
-      <InView as="div" onChange={(inView) => { inView ? setActiveNav('#experience') : void(0) } }></InView>
+      <InView as="div" onChange={(inView) => { inView ? setActiveNav('#experiences') : void(0) } }></InView>
       <VerticalTimeline className='container experience__container'>
         {experiences.map( (experience,index) => (
           <Experience
