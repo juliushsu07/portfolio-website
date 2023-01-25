@@ -20,14 +20,14 @@ function Portfolio( {setActiveNav} ) {
     },
     {
       "id": 2,
-      "name": "Air Call App",
+      "name": "Aircall 48hr Challenge App",
       "demoLink": "https://aircall-5fd82.web.app/",
       "gitLink": "https://github.com/juliushsu07/aircall",
       "img" : IMG2
     },
     {
       "id": 3,
-      "name": "Cluep Ad Ops App",
+      "name": "Cluep Ad Ops Tool App",
       "demoLink": null,
       "gitLink": null,
       "img" : IMG3
@@ -36,19 +36,21 @@ function Portfolio( {setActiveNav} ) {
 
   return (
     <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <InView as="div" onChange={(inView) => { inView ? setActiveNav('#portfolio') : void(0) } }></InView>
-        <ul className='container portfolio__container'>
-          {projects.map((project) => (
-            <Project
-              key={project.id}
-              projectName={project.name}
-              demoLink={project.demoLink}
-              gitLink={project.gitLink}
-              img={project.img}
-            />
-          ))}
-        </ul>
+        <div className='container portfolio__container'>
+          <h2>My Portfolio</h2>
+          <InView as="div" onChange={(inView) => { inView ? setActiveNav('#portfolio') : void(0) } }></InView>
+          <ul className='portfolio__items'>
+            {projects.map((project) => (
+              <Project
+                key={project.id}
+                projectName={project.name}
+                demoLink={project.demoLink}
+                gitLink={project.gitLink}
+                img={project.img}
+              />
+            ))}
+          </ul>
+        </div>
     </section>
   )
 }

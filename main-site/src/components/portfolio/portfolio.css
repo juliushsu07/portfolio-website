@@ -1,19 +1,21 @@
 #portfolio {
     background: var(--color-medium-gray);
-    padding: 7rem 2rem 7rem 2rem;
-    height: 100%;
-}
-
-Section > h2, Section > h5 {
-    margin: 2.5rem 0 2.5rem 0;
+    height: 100vh;
+    display: grid;
+    align-items: center;
 }
 
 .portfolio__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    margin: 0 auto;
-    
+    text-align: center;
+    max-width: 1070px;
+}
+
+.portfolio__container ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .portfolio__item > h3{ 
@@ -40,78 +42,32 @@ Section > h2, Section > h5 {
     border-color: white;
 }
 
-.portfolio__item{
-    border-radius: 2rem ;
-    transition: var(--transition);
-    border: 2px solid transparent;
-}
-
-.portfolio__item:hover {
-    cursor: pointer;
-    border: 2px solid var(--color-green-variant);
-    border-radius: 2.2rem;
-}
-
-
-.portfolio__item:hover .project__buttons {
-    border-bottom: 1px; 
-    border-style: solid;  
-    border-bottom: 3px solid var(--color-green-variant); 
-    border-color: var(--color-green-variant);
-}
-
 .btn {
     background: var(--color-white);
 }
 
-
-/* ================== Media Queries (MEDIUM DEVICES) ================== */
-@media screen and (max-width:1200px) {
+/* ================== Media Queries ( DEVICES) ================== */
+@media screen and (max-width:1069px) {
     #portfolio {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        height: 100%;
+        padding: 6rem 0;
     }
-    .portfolio__container {
+
+    .portfolio__container ul {
         grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-        gap: 1.2rem;
+    }
+    .portfolio__item {
+        padding: 1rem 0 0 0;
     }
 }
 
-/* ================== Media Queries (SMALL DEVICES) ================== */
+/* ================== Media Queries (SMALL & MEDIUM DEVICES) ================== */
 @media screen and (max-width:680px) {
-    #portfolio {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .portfolio__container {
+    .portfolio__container ul {
         grid-template-columns: 1fr;
-        gap: 1.2rem;
     }
+
     .portfolio__item {
-        padding: 1rem 0 1rem 0;
+        margin: 0 2rem;
     }
-
-    section > h2, section > h5 {
-        margin: 0;
-    }
-    
-    .portfolio__item{
-        border: None;
-    }
-
-    .portfolio__item:hover {
-        cursor: pointer;
-        border: None;
-    }
-
-    .project__buttons {
-        border: None;
-        
-    }
-    .portfolio__item:hover .project__buttons {
-        border: None;
-        border-bottom: 2px solid var(--color-green-variant); 
-    }
-
 } 
