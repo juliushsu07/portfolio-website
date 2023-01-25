@@ -13,42 +13,44 @@ function Portfolio( {setActiveNav} ) {
   const projects = [
     {
       "id": 1,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "name": "Daily Task CRUD App",
+      "demoLink": "https://todolist-b59c9.web.app/",
+      "gitLink": "https://github.com/juliushsu07/to-do-list",
       "img" : IMG1
     },
     {
       "id": 2,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "name": "Aircall 48hr Challenge App",
+      "demoLink": "https://aircall-5fd82.web.app/",
+      "gitLink": "https://github.com/juliushsu07/aircall",
       "img" : IMG2
     },
     {
       "id": 3,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "name": "Cluep Ad Ops Tool App",
+      "demoLink": null,
+      "gitLink": null,
       "img" : IMG3
     },
   ]
 
   return (
     <section id="portfolio">
-        <h2>My Recent Work</h2>
-        <InView as="div" onChange={(inView) => { inView ? setActiveNav('#portfolio') : void(0) } }></InView>
-        <ul className='container portfolio__container'>
-          {projects.map((project) => (
-            <Project
-              key={project.id}
-              projectName={project.name}
-              demoLink={project.demoLink}
-              gitLink={project.gitLink}
-              img={project.img}
-            />
-          ))}
-        </ul>
+        <div className='container portfolio__container'>
+          <h2>My Portfolio</h2>
+          <InView as="div" onChange={(inView) => { inView ? setActiveNav('#portfolio') : void(0) } }></InView>
+          <ul className='portfolio__items'>
+            {projects.map((project) => (
+              <Project
+                key={project.id}
+                projectName={project.name}
+                demoLink={project.demoLink}
+                gitLink={project.gitLink}
+                img={project.img}
+              />
+            ))}
+          </ul>
+        </div>
     </section>
   )
 }
