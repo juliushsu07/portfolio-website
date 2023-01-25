@@ -1,10 +1,10 @@
-import { React, useRef, useState} from 'react'
+import { React, useState} from 'react'
 
 import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
-import Experiences from './components/experience/Experiences'
-import Portfolio from './components/portfolio/Portfolio'
+import Experiences from './components/experiences/Experiences'
+import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
       <Header setActiveNav={setActiveNav} />
       <About setActiveNav={setActiveNav} />
       <Experiences setActiveNav={setActiveNav} />
-      <Portfolio setActiveNav={setActiveNav} />
+      <Projects setActiveNav={setActiveNav} />
       <Contact setActiveNav={setActiveNav}/>
     </>
   )
