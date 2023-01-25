@@ -2,83 +2,64 @@ import React from 'react'
 import { InView } from 'react-intersection-observer';
 
 import './about.css'
-
-import {TbNotebook} from 'react-icons/tb'
-import {TbSchool} from 'react-icons/tb'
-import {FaProjectDiagram} from 'react-icons/fa'
-import {DiJavascript} from 'react-icons/di'
-import {FaPython} from 'react-icons/fa'
-import {FaReact} from 'react-icons/fa'
-import {SiRedux} from 'react-icons/si'
-import {AiFillHtml5} from 'react-icons/ai'
-import {DiCss3} from 'react-icons/di'
-import {DiBootstrap} from 'react-icons/di'
-import {DiSass} from 'react-icons/di'
-import {SiStyledcomponents} from 'react-icons/si'
-import {FaNodeJs} from 'react-icons/fa'
-import {SiExpress} from 'react-icons/si'
-import {SiFlask} from 'react-icons/si'
-import {SiMongodb} from 'react-icons/si'
-import {AiOutlineConsoleSql} from 'react-icons/ai'
-import {DiLinux} from 'react-icons/di'
-import {GrDocker} from 'react-icons/gr'
+import {AiFillHtml5, AiFillGithub} from 'react-icons/ai'
+import {FaReact,FaNodeJs, FaPython, FaAws} from 'react-icons/fa'
+import {GrMysql, GrDocker} from 'react-icons/gr'
+import {DiCss3, DiJavascript, DiBootstrap, DiSass, DiLinux, DiGit} from 'react-icons/di'
+import {SiTypescript, SiRedux, SiStyledcomponents, SiExpress, SiFlask, SiMongodb, SiPostgresql, SiFirebase, SiPostman, SiNginx, SiJirasoftware } from 'react-icons/si'
 
 const About = ( {setActiveNav} ) => {
   return (
     <section id="about"> 
-      <h2>About Me</h2>
-      <InView as="div" onChange={(inView) => {inView ? setActiveNav('#about') : void(0) } }></InView>
-      <div className='my__stack'>
-        <small>
-          <DiJavascript />Javascript&nbsp;&nbsp;
-          <FaPython />Python&nbsp;&nbsp;
-          <FaReact />ReactJs&nbsp;&nbsp;
-          <SiRedux />Redux&nbsp;&nbsp;
-          <AiFillHtml5 />HTML5&nbsp;&nbsp;
-          <DiCss3 />CSS3&nbsp;&nbsp;
-          <DiBootstrap />Bootstrap&nbsp;&nbsp;
-          <DiSass />Sass&nbsp;&nbsp;
-          <SiStyledcomponents />Styled Components&nbsp;&nbsp;
-          <FaNodeJs />NodeJS&nbsp;&nbsp;
-          <SiExpress />ExpressJS&nbsp;&nbsp;
-          <SiFlask />Flask&nbsp;&nbsp;
-          <SiMongodb />MongoDB&nbsp;&nbsp;
-          <AiOutlineConsoleSql />SQL&nbsp;&nbsp;
-          <DiLinux />Linux&nbsp;&nbsp;
-          <GrDocker />Docker&nbsp;&nbsp;
-        </small>
-      </div>
-
       <div className='container about__container'>
+        <h2>About Me</h2>
+        <InView as="div" onChange={(inView) => {inView ? setActiveNav('#about') : void(0) } }></InView>
         <div className ="about__content">
-            <p>I'm a positive, enthusiastic and competent Full Stack Developer, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!
-              <br></br>
-              <br></br>
-              During my last 4+ years working as a Software Engineer and a Senior Operation Specialist, I have gained a lot of experience in building web applications using ReactJS as the front-end and NodeJS and ExpressJS as the back-end with MongoDB. I enjoy taking on new challenges, and I learn new kits and frameworks in my free time to stay updated with current technology. I strive to write better code that meets first-class standards, and I desire to make an impact in the world of software development!
-            </p>
+            <p>Enthusiastic and hardworking professional with 4+ years experience working as an Ad Operation Specialist - Scripter and 1 to 2 years of experience in full stack web development, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!</p>
+            <p>During my 4+ years in Cluep Inc, I have worked closely with the engineering team on some scrum releases, outside of my Ad Ops duties. I built many software features for the company’s internal admin dashboard, which used ReactJS as frontend, Node and ExpressJS as backend with MongoDB. I constantly took initiatives to provide software solutions that helped automate time-consuming tasks, and I have also built a full stack CRUD app from scratch for the Ad Ops team .</p>
 
           <div className='about__cards'>   
-            <a href="https://github.com/juliushsu07" target="_blank" className='about__card'>
-              <FaProjectDiagram /> 
-              <h5>Git</h5>
-              <small> 17 projects</small>
+            <a className='about__card'>
+              <h5>FRONTEND</h5>
+              <ul>
+                <li>&nbsp;<AiFillHtml5 /> HTML5</li>
+                <li>&nbsp;<DiCss3 /> CSS3</li>
+                <li>&nbsp;<DiJavascript /> Javascript</li>
+                <li>&nbsp;<SiTypescript /> Typescript</li>
+                <li>&nbsp;<FaReact /> ReactJs</li>
+                <li>&nbsp;<SiRedux /> Redux</li>
+                <li>&nbsp;<DiBootstrap /> Bootstrap</li>
+                <li>&nbsp;<SiStyledcomponents /> Styled-components</li>
+              </ul>
             </a>
-            
-            <a href="#experience" className='about__card'>
-              <TbNotebook /> 
-              <h5>Experience</h5>
-              <small>4+ Years</small>
-            </a>
-            
-            <a href="#experience" className='about__card'>
-              <TbSchool /> 
-              <h5>UBC</h5>
-              <small>Bachelor of Comp Eng</small>
+            <a className='about__card'>
+              <h5>BACKEND</h5>
+              <ul>
+                <li>&nbsp;<FaNodeJs /> NodeJS</li>
+                <li>&nbsp;<SiExpress /> ExpressJS</li>
+                <li>&nbsp;<FaPython /> Python</li>
+                <li>&nbsp;<SiFlask /> Flask</li>
+                <li>&nbsp;<SiMongodb /> MongoDB</li>
+                <li>&nbsp;<GrMysql /> MySQL</li>
+                <li>&nbsp;<SiPostgresql /> PostgreSQL</li>
+              </ul>
+            </a>  
+            <a className='about__card'>
+              <h5>DEVOPS-TOOLS</h5>
+              <ul>
+                <li>&nbsp;<DiLinux /> Linux</li>
+                <li>&nbsp;<SiFirebase /> Firebase</li>
+                <li>&nbsp;<FaAws /> AWS</li>
+                <li>&nbsp;<DiGit /> Git</li>
+                <li>&nbsp;<AiFillGithub /> GitHub</li>
+                <li>&nbsp;<GrDocker /> Docker</li>
+                <li>&nbsp;<SiJirasoftware /> Jira</li>
+                <li>&nbsp;<SiPostman /> Postman</li>
+                {/* <li>&nbsp;<SiNginx /> NGINX</li> */}
+              </ul>
             </a>
           </div>
-
         </div>
-      
       </div>
     </section >
   )
