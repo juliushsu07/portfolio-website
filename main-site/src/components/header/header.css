@@ -1,6 +1,5 @@
 Header {
     height: 100vh;
-    /* padding-top: 7rem; */
     overflow: hidden;
 }
 
@@ -18,7 +17,7 @@ Header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 60%;
 }
 
 .header__container > section > p {

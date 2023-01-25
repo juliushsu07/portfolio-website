@@ -12,7 +12,6 @@
 }
 
 :root {
-     /* #495057 */
     --color-text: #183153;
     --color-white: #fff;
     --color-pink-white: #FFF1FA;
@@ -50,7 +49,6 @@ body {
     background: var(--color-white);
     color: var(--color-text);
     line-height: 1.7;
-    /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 /* ================== GENERAL STYLES ================== */
