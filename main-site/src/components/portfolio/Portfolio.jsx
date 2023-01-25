@@ -13,30 +13,30 @@ function Portfolio( {setActiveNav} ) {
   const projects = [
     {
       "id": 1,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "name": "Daily Task CRUD App",
+      "demoLink": "https://todolist-b59c9.web.app/",
+      "gitLink": "https://github.com/juliushsu07/to-do-list",
       "img" : IMG1
     },
     {
       "id": 2,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "name": "Air Call App",
+      "demoLink": "https://aircall-5fd82.web.app/",
+      "gitLink": "https://github.com/juliushsu07/aircall",
       "img" : IMG2
     },
     {
       "id": 3,
-      "name": "Esmeralda Vanne",
-      "demoLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-      "gitLink": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+      "name": "Cluep Ad Ops App",
+      "demoLink": null,
+      "gitLink": null,
       "img" : IMG3
     },
   ]
 
   return (
     <section id="portfolio">
-        <h2>My Recent Work</h2>
+        <h2>My Portfolio</h2>
         <InView as="div" onChange={(inView) => { inView ? setActiveNav('#portfolio') : void(0) } }></InView>
         <ul className='container portfolio__container'>
           {projects.map((project) => (

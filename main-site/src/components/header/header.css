@@ -93,13 +93,6 @@ Header {
     background-color: var(--color-text);
 }
 
-/* .me {
-    width: 18rem;
-    position: absolute;
-    left: calc(50% - 9rem);
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-} */
 
 /* ================== HEADER SOCIALS ================== */
 .email__sidebar {

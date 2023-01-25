@@ -2,7 +2,6 @@ import React from 'react'
 import { InView } from 'react-intersection-observer';
 
 import './header.css'
-import ME from '../../assets/me.png'
 
 import HeaderSocial from './HeaderSocial'
 import Typewritter from 'typewriter-effect'

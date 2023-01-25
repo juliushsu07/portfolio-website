@@ -9,8 +9,8 @@ function Project({projectName, demoLink, gitLink, img}) {
         
         <h3>{projectName}</h3>
         <div className='project__buttons'>
-          <a href={demoLink} className='btn' target='_blank'>GitHub</a>
-          <a href={gitLink} className='btn-primary' target='_blank'>Live Demo</a>
+          <a href={gitLink} className='btn' target='_blank'>GitHub</a>
+          <a href={demoLink} className='btn-primary' target='_blank'>Live Demo</a>
         </div>
     </li>   
   )
