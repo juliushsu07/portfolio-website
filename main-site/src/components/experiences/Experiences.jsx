@@ -35,7 +35,7 @@ const Experiences = ( {setActiveNav} ) => {
       "jobTitle" : "Junior Software Engineer",
       "location" : "Cluep Inc.",
       "achievements" : [
-        "Created and maintained over 50 automation python scripts for the Operation team.",
+        "Created and maintained over 50 python scripts for the Operation team.",
         "Designed and pitched bulk upload features for several front-end components of the admin dashboard. These features were later built and in turn increased operation efficiency by 95% for everyday tasks.",
         "Created, maintained and performed Manual Test Plans for up to 40 components of the company's admin dashboard.",
       ]
