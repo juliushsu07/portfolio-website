@@ -20,7 +20,7 @@
 .about__card {
     border: 2px solid var(--color-text);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 

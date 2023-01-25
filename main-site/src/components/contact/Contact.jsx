@@ -15,11 +15,11 @@ const Contact = ( {setActiveNav} ) => {
       e.preventDefault();
   
       emailjs.sendForm('service_pjkr405', 'template_l3mt9b9', form.current, '1EJHdUabNu79klbBB')
-        .then((result) => {
-            alert('Email Sent!');
+        .then(() => {
+            alert('Email sent!');
             e.target.reset()
-        }, (error) => {
-            alert('There was some ERROR!')
+        }, () => {
+            alert('There was an error!')
         });        
     };
 
@@ -45,13 +45,13 @@ const Contact = ( {setActiveNav} ) => {
           
           </div>
           <form ref={form} onSubmit={sendEmail}>
-            <input type='text' name='name' placeholder='Your Full Name' requred />
+            <input type='text' name='name' placeholder='Your Full Name' required />
             <input type='email' name='email' placeholder='Your Email' required />
             <textarea name='message' row='7' placeholder='Your Message' required />
             <button type='submit' className='btn-primary'>Send Message</button>
           </form>
-          <InView as="div" onChange={(inView) => { inView ? setActiveNav('#contact') : void(0) } }></InView>
         </div>
+          <InView as="div" onChange={ (inView) => { inView ? setActiveNav('#contact') : void(0) } }></InView>
     </section>
   )
 }

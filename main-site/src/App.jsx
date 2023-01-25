@@ -8,7 +8,8 @@ import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 
 const App = () => {
-  const [activeNav, setActiveNav] = useState(window.location.hash ? window.location.hash : '#');
+  const HASH = window.location.hash
+  const [activeNav, setActiveNav] = useState(HASH);
 
   return (
     <>
