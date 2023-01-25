@@ -25,7 +25,7 @@ const Header = ( {setActiveNav} ) => {
             />
           <InView as="div" onChange={(inView) => { inView ? setActiveNav('#') : void(0) } }></InView>
           <h1>Julius Hsu</h1>
-          <h4>I'm a software engineer specialized in building full stack web applications. <br/> Welcome to my cornor of the internet!</h4>
+          <h4>I'm a software engineer specialized in building full stack web apps.<br></br>Welcome to my cornor of the internet!</h4>
           <div className='my__resume'>
             <a href={RESUME} target="_blank" className='btn-primary'>My Resume</a>
           </div>

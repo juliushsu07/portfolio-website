@@ -89,7 +89,7 @@ a:hover{
     cursor: pointer;
 }
 
-.btn {
+.btn-gray {
     width: max-content;
     display: inline-block;
     color: var(--color-text);
@@ -100,7 +100,7 @@ a:hover{
     cursor: pointer;
 }
 
-.btn:hover {
+.btn-gray:hover {
     background: var(--color-light-gray);
 }
 

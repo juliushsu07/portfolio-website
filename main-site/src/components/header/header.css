@@ -18,7 +18,7 @@ Header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 50%;
 }
 
 .header__container > section > h4 {

@@ -60,7 +60,7 @@
 @media screen and (max-width:1169px) {
     #about {
         height: 100%;
-        padding: 6rem 0;
+        padding: 3rem 0 6rem 0;
     }
     .about__cards {
         grid-template-columns: 1fr;

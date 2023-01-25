@@ -10,8 +10,8 @@ function Project({projectName, demoLink, gitLink, img}) {
         
         <h3>{projectName}</h3>
         <div className='project__buttons'>
-          <a href={gitLink} className='btn' target='_blank'>{gitLink ? "GitHub" : "Not Available" }</a>
-          <a href={demoLink} className='btn' target='_blank'>{demoLink ? "Live Demo" : "Not Available" }</a>
+          <a href={gitLink} className={gitLink ? 'btn-primary' : 'btn-gray'} target='_blank'>{gitLink ? "GitHub" : "Not Available" }</a>
+          <a href={demoLink} className={demoLink ? 'btn-primary': 'btn-gray'} target='_blank'>{demoLink ? "Live Demo" : "No Demo" }</a>
         </div>
     </li>   
   )
