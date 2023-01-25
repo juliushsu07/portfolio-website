@@ -15,8 +15,9 @@ const About = ( {setActiveNav} ) => {
         <h2>About Me</h2>
         <InView as="div" onChange={(inView) => {inView ? setActiveNav('#about') : void(0) } }></InView>
         <div className ="about__content">
-            <p>Enthusiastic and hardworking professional with 4+ years experience working as an Ad Operation Specialist - Scripter and 1 to 2 years of experience in full stack web development, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!</p>
-            <p>During my 4+ years in Cluep Inc, I have worked closely with the engineering team on some scrum releases, outside of my Ad Ops duties. I built many software features for the company’s internal admin dashboard, which used ReactJS as frontend, Node and ExpressJS as backend with MongoDB. I constantly took initiatives to provide software solutions that helped automate time-consuming tasks, and I have also built a full stack CRUD app from scratch for the Ad Ops team .</p>
+            <p>Enthusiastic and hardworking professional with 4+ years of experience working as an Ad Operation Specialist and ~2 years of experience in full stack web development, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!</p>
+            <p>During my years in Cluep Inc, I worked closely with the engineering team on scrum releases, aside from my Ad Ops duties. I built many software features for the company’s internal admin dashboard, which used ReactJS in frontend, NodeJS and ExpressJS at the backend with MongoDB. I constantly took initiatives to provide software solutions that helped automate time-consuming tasks, and I also built a full stack CRUD Ad Ops app from the ground up.</p>
+            <p>Here are a few technologies I’ve been working with recently:</p>
 
           <div className='about__cards'>   
             <a className='about__card'>
@@ -24,7 +25,7 @@ const About = ( {setActiveNav} ) => {
               <ul>
                 <li>&nbsp;<AiFillHtml5 /> HTML5</li>
                 <li>&nbsp;<DiCss3 /> CSS3</li>
-                <li>&nbsp;<DiJavascript /> Javascript</li>
+                <li>&nbsp;<DiJavascript /> Javascript (ES6+)</li>
                 <li>&nbsp;<SiTypescript /> Typescript</li>
                 <li>&nbsp;<FaReact /> ReactJs</li>
                 <li>&nbsp;<SiRedux /> Redux</li>
