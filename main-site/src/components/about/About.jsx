@@ -15,9 +15,9 @@ const About = ( {setActiveNav} ) => {
         <h2>About Me</h2>
         <InView as="div" onChange={(inView) => {inView ? setActiveNav('#about') : void(0) } }></InView>
         <div className ="about__content">
-            <p>Enthusiastic and hardworking professional with 4+ years of experience working as an Ad Operation Specialist and ~2 years of experience in full stack web development, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!</p>
-            <p>During my years in Cluep Inc, I worked closely with the engineering team on scrum releases, aside from my Ad Ops duties. I built many software features for the company’s internal admin dashboard, which used ReactJS in frontend, NodeJS and ExpressJS at the backend with MongoDB. I constantly took initiatives to provide software solutions that helped automate time-consuming tasks, and I also built a full stack CRUD Ad Ops app from the ground up.</p>
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Enthusiastic and hardworking professional with 4+ years of experience working as an Ad Operation Specialist and 1-2 years of experience in full stack web development, seeking long-term employment with a company where I can immerse myself in their brand and ambitions!</p>
+            <p>During my years at Cluep Inc, I worked closely with the engineering team on scrum releases, aside from my Ad Ops duties. I have built software features for the company’s internal admin dashboard, which used ReactJS as frontend, NodeJS and ExpressJS as backend with MongoDB. I provided many software solutions that helped automate time-consuming tasks, and I also took the initiative to build a full-stack CRUD app from the ground up for the Ad Ops team.</p>
+            <p>Here are a few more technologies that I’ve been working with recently:</p>
 
           <div className='about__cards'>   
             <a className='about__card'>
